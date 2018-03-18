@@ -1,0 +1,15 @@
+{
+    "name": "koya/cakephp",
+    "authors": [
+        {
+            "name": "KoyaKikuchi",
+            "email": "koyakikuchi@wideplain.com"
+        }
+    ],
+    "config": {
+      "vendor-dir": "Vendor"
+    },
+    "require": {
+        "cakephp/cakephp": "2.10.*"
+    }
+}
