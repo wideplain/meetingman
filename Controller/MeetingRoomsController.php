@@ -35,6 +35,7 @@ class MeetingRoomsController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		debug($this->request->params);
 		if (!$this->MeetingRoom->exists($id)) {
 			throw new NotFoundException(__('Invalid meeting room'));
 		}

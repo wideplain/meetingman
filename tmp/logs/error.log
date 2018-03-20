@@ -1,0 +1,542 @@
+2018-03-19 15:47:43 Error: [MissingControllerException] Controller class MeetingsController could not be found.
+Exception Attributes: array (
+  'class' => 'MeetingsController',
+  'plugin' => NULL,
+)
+Request URL: /~koya/meetingman/meetings
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-03-19 15:47:50 Error: [MissingControllerException] Controller class MeetingsController could not be found.
+Exception Attributes: array (
+  'class' => 'MeetingsController',
+  'plugin' => NULL,
+)
+Request URL: /~koya/meetingman/meetings/add
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-03-20 08:14:02 Error: [MissingControllerException] Controller class MeetingController could not be found.
+Exception Attributes: array (
+  'class' => 'MeetingController',
+  'plugin' => NULL,
+)
+Request URL: /~koya/meetingman/meeting
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-03-20 08:14:11 Error: [MissingHelperException] Helper class MeetingHelper could not be found.
+Exception Attributes: array (
+  'class' => 'MeetingHelper',
+  'plugin' => false,
+)
+Request URL: /~koya/meetingman/meetings
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/View/View.php(907): HelperCollection->load('Meeting', Array)
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(1263): View->__construct(Object(MeetingsController))
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(949): Controller->_getViewObject()
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#6 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-03-20 08:14:34 Error: [MissingViewException] View file "Meetings/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Meetings/index.ctp',
+)
+Request URL: /~koya/meetingman/meetings
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Meetings/index')
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#4 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-03-20 08:16:06 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: meetings.id
+Request URL: /~koya/meetingman/meetings/add
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1092): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Meeting), Array, Array)
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Users/koya/Sites/meetingman/Controller/MeetingsController.php(59): Model->save(Array)
+#6 [internal function]: MeetingsController->add()
+#7 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsController), Array)
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-03-20 08:16:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: meetings.id
+Request URL: /~koya/meetingman/meetings/add
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1092): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Meeting), Array, Array)
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Users/koya/Sites/meetingman/Controller/MeetingsController.php(59): Model->save(Array)
+#6 [internal function]: MeetingsController->add()
+#7 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsController), Array)
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-03-20 08:27:25 Error: [MissingControllerException] Controller class MemberController could not be found.
+Exception Attributes: array (
+  'class' => 'MemberController',
+  'plugin' => NULL,
+)
+Request URL: /~koya/meetingman/member
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-03-20 08:27:30 Error: [MissingControllerException] Controller class MenbersController could not be found.
+Exception Attributes: array (
+  'class' => 'MenbersController',
+  'plugin' => NULL,
+)
+Request URL: /~koya/meetingman/menbers
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-03-20 08:29:27 Error: [MissingControllerException] Controller class MenbersController could not be found.
+Exception Attributes: array (
+  'class' => 'MenbersController',
+  'plugin' => NULL,
+)
+Request URL: /~koya/meetingman/menbers
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-03-20 08:30:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: meetings.id
+Request URL: /~koya/meetingman/meetings/add
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1092): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Meeting), Array, Array)
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Users/koya/Sites/meetingman/Controller/MeetingsController.php(59): Model->save(Array)
+#6 [internal function]: MeetingsController->add()
+#7 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsController), Array)
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-03-20 08:39:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: meetings.id
+Request URL: /~koya/meetingman/meetings/add
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1092): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Meeting), Array, Array)
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Users/koya/Sites/meetingman/Controller/MeetingsController.php(59): Model->save(Array)
+#6 [internal function]: MeetingsController->add()
+#7 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsController), Array)
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-03-20 08:54:57 Error: [ParseError] syntax error, unexpected ''associationforeignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 08:55:47 Error: [ParseError] syntax error, unexpected ''associationForeignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 08:55:48 Error: [ParseError] syntax error, unexpected ''associationForeignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 08:57:58 Error: [ParseError] syntax error, unexpected ''associationForeignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 08:57:59 Error: [ParseError] syntax error, unexpected ''associationForeignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 08:57:59 Error: [ParseError] syntax error, unexpected ''associationForeignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 08:58:00 Error: [ParseError] syntax error, unexpected ''associationForeignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:00:23 Error: [ParseError] syntax error, unexpected ''ForeignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:00:24 Error: [ParseError] syntax error, unexpected ''ForeignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:00:38 Error: [ParseError] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:00:39 Error: [ParseError] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:03:15 Error: [ParseError] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:03:16 Error: [ParseError] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:03:16 Error: [ParseError] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:03:17 Error: [ParseError] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/members
+Stack Trace:
+#0 [internal function]: App::load('Member')
+#1 [internal function]: spl_autoload_call('Member')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Member')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Member')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Member')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Member')
+#6 /Users/koya/Sites/meetingman/Controller/MembersController.php(26): Controller->__get('Member')
+#7 [internal function]: MembersController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:04:09 Error: [ParseError] syntax error, unexpected ''foreignKey'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /~koya/meetingman/meetings
+Stack Trace:
+#0 [internal function]: App::load('Meeting')
+#1 [internal function]: spl_autoload_call('Meeting')
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Meeting')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(741): ClassRegistry::init('Meeting')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(368): Controller->loadModel('Meeting')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(406): Controller->__isset('Meeting')
+#6 /Users/koya/Sites/meetingman/Controller/MeetingsController.php(26): Controller->__get('Meeting')
+#7 [internal function]: MeetingsController->index()
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsController), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#11 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-03-20 09:13:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: meetings.id
+Request URL: /~koya/meetingman/meetings/add
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1092): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Meeting), Array, Array)
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Users/koya/Sites/meetingman/Controller/MeetingsController.php(53): Model->save(Array)
+#6 [internal function]: MeetingsController->add()
+#7 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsController), Array)
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-03-20 09:14:33 Error: [MissingControllerException] Controller class MeetingsMenbersController could not be found.
+Exception Attributes: array (
+  'class' => 'MeetingsMenbersController',
+  'plugin' => NULL,
+)
+Request URL: /~koya/meetingman/meetings_menbers
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-03-20 09:15:27 Error: [MissingViewException] View file "MeetingsMenbers/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'MeetingsMenbers/index.ctp',
+)
+Request URL: /~koya/meetingman/meetings_menbers
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('MeetingsMenbers...')
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsMenbersController), Object(CakeRequest))
+#4 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-03-20 09:16:02 Error: [Error] Call to a member function find() on null
+Request URL: /~koya/meetingman/meetings_menbers/add
+Stack Trace:
+#0 [internal function]: MeetingsMenbersController->add()
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsMenbersController), Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsMenbersController), Object(CakeRequest))
+#4 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-03-20 09:16:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: meetings.id
+Request URL: /~koya/meetingman/meetings/add
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1092): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Meeting), Array, Array)
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Users/koya/Sites/meetingman/Controller/MeetingsController.php(53): Model->save(Array)
+#6 [internal function]: MeetingsController->add()
+#7 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsController), Array)
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-03-20 09:18:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: meetings.id
+Request URL: /~koya/meetingman/meetings/add
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(472): PDOStatement->execute(Array)
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(438): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1092): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Meeting), Array, Array)
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Users/koya/Sites/meetingman/Controller/MeetingsController.php(53): Model->save(Array)
+#6 [internal function]: MeetingsController->add()
+#7 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsController), Array)
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#10 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-03-20 09:31:58 Error: [MissingTableException] Table meetings_members for model MeetingsMember was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'meetings_members',
+  'class' => 'MeetingsMember',
+  'ds' => 'default',
+)
+Request URL: /~koya/meetingman/meetings/view/1
+Stack Trace:
+#0 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3673): Model->setSource('meetings_member...')
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(898): Model->schema()
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(926): Model->__isset('MeetingsMember')
+#4 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3749): Model->__get('MeetingsMember')
+#5 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1866): Model->joinModel('MeetingsMember', Array)
+#6 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1337): DboSource->generateAssociationQuery(Object(Meeting), Object(Member), 'hasAndBelongsTo...', 'Member', Array, Array, true)
+#7 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Datasource/DboSource.php(1217): DboSource->queryAssociation(Object(Meeting), Object(Member), 'hasAndBelongsTo...', 'Member', Array, Array, true, Array, 0, Array)
+#8 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(Meeting), Array)
+#9 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#10 /Users/koya/Sites/meetingman/Controller/MeetingsController.php(42): Model->find('first', Array)
+#11 [internal function]: MeetingsController->view('1')
+#12 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsController), Array)
+#13 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsController), Object(CakeRequest))
+#15 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2018-03-20 09:32:23 Error: [Error] Call to a member function find() on null
+Request URL: /~koya/meetingman/meetings_menbers/add
+Stack Trace:
+#0 [internal function]: MeetingsMenbersController->add()
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsMenbersController), Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsMenbersController), Object(CakeRequest))
+#4 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-03-20 09:32:34 Error: [Error] Call to a member function find() on null
+Request URL: /~koya/meetingman/meetings_menbers/add
+Stack Trace:
+#0 [internal function]: MeetingsMenbersController->add()
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsMenbersController), Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsMenbersController), Object(CakeRequest))
+#4 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-03-20 09:32:46 Error: [Error] Call to a member function find() on null
+Request URL: /~koya/meetingman/meetings_menbers/add
+Stack Trace:
+#0 [internal function]: MeetingsMenbersController->add()
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsMenbersController), Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsMenbersController), Object(CakeRequest))
+#4 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-03-20 09:33:22 Error: [Error] Call to a member function find() on null
+Request URL: /~koya/meetingman/meetings_menbers/add
+Stack Trace:
+#0 [internal function]: MeetingsMenbersController->add()
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsMenbersController), Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsMenbersController), Object(CakeRequest))
+#4 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-03-20 09:36:25 Error: [Error] Call to a member function find() on null
+Request URL: /~koya/meetingman/meetings_menbers/add
+Stack Trace:
+#0 [internal function]: MeetingsMenbersController->add()
+#1 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MeetingsMenbersController), Array)
+#2 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/koya/Sites/meetingman/Vendor/cakephp/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MeetingsMenbersController), Object(CakeRequest))
+#4 /Users/koya/Sites/meetingman/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

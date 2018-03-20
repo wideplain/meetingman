@@ -20,7 +20,7 @@ class AppSchema extends CakeSchema {
       'default' => null),
     'end_time' => array('type' => 'datetime', 'null' => false,
       'default' => null),
-    'meeting_room_id' => array('type' => 'integer', 'key' => 'primary',
+    'meeting_room_id' => array('type' => 'integer',
       'null' => false, 'default' => null),
     'title' => array('type' => 'string',
       'null' => false, 'default' => '', 'length' => 255),
@@ -53,9 +53,9 @@ class AppSchema extends CakeSchema {
   public $meetings_menbers = array(
     'id' => array('type' => 'integer', 'key' => 'primary',
       'null' => false, 'default' => null),
-    'meeting_id' => array('type' => 'integer', 'key' => 'primary',
+    'meeting_id' => array('type' => 'integer',
       'null' => false, 'default' => null),
-    'member_id' => array('type' => 'integer', 'key' => 'primary',
+    'member_id' => array('type' => 'integer',
       'null' => false, 'default' => null),
 
     'indexes' => array(
